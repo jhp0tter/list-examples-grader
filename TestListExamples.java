@@ -22,7 +22,7 @@ public class TestListExamples {
 
   @Test 
   public void test1(){
-    List testlist1= new ArrayList<>(); 
+    List<String> testlist1= new ArrayList<String>(); 
     testlist1.add("music");
     testlist1.add("for");
     testlist1.add("a");
@@ -31,18 +31,18 @@ public class TestListExamples {
 
     StringChecker st = new greaterThan5();
 
-    List expected= new ArrayList<>();
+    List<String> expected= new ArrayList<String>();
     expected.add("music");
     expected.add("sushi");
     expected.add("restaurant");
     
-    List actual= ListExamples.filter(testlist1, st);
+    List<String> actual= ListExamples.filter(testlist1, st);
     assertEquals(expected, actual);
   }
 
   @Test 
   public void test2(){
-    List testlist2= new ArrayList<>(); 
+    List<String> testlist2= new ArrayList<String>(); 
     testlist2.add("music");
     testlist2.add("for");
     testlist2.add("a");
@@ -51,12 +51,12 @@ public class TestListExamples {
 
     StringChecker st = new lesserThan5();
 
-    List expected= new ArrayList<>();
+    List<String> expected= new ArrayList<String>();
     expected.add("for");
     expected.add("a");
     
     
-    List actual= ListExamples.filter(testlist2, st);
+    List<String> actual= ListExamples.filter(testlist2, st);
     assertEquals(expected, actual);
   }
 }
