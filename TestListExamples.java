@@ -49,7 +49,7 @@ public class TestListExamples {
     testlist2.add("sushi");
     testlist2.add("restaurant");
 
-    StringChecker st = new greaterThan5();
+    StringChecker st = new lesserThan5();
 
     List expected= new ArrayList<>();
     expected.add("for");
